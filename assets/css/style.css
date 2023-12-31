@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter";
+}
+
+.color-grey {
+    padding: 64px;
+    align-items: center;
+    text-align: center;
+}
+
+.top {
+    font-weight: 700;
+    font-size: 100px;
+}
+
+#about {
+    margin-left: 89px;
+    background-color: rgb(255, 0, 0, 20%);
+    padding: 64px;
+    background-image: url(../img/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: white;
+}
+
+center h1 {
+    font-weight: 500;
+    text-align: left !important;
+}
+
+center.small h1 {
+    font-weight: 500;
+    text-align: center !important;
+}
+
+#counter {
+    margin-left: 89px;
+    padding: 64px;
+}
+
+#counter center h1 {
+    font-weight: 500;
+    text-align: left !important;
+    font-size: 50px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#counter center {
+    align-items: left;
+}
+
+.left {
+    float: left !important
+}
+
+.right {
+    float: right !important
+}
+
+.half {
+    width: 49.99999%
+}
+
+#students,
+#alumni {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 64px;
+}
+
+.quarter {
+    width: 24.99999%;
+}
+
+#counter.counter .right.half .right.quarter center i,
+.blup i {
+    font-family: "Roboto";
+}
+
+.hide-small,
+.hide-medium,
+.hide-large {
+    display: auto;
+}
+
+@media (max-width: 768px) {
+    .hide-small {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .hide-large,
+    .shithellseedling {
+        display: none;
+    }
+}
+
+#students2,
+#alumni2 {
+    font-size: 30px;
+    text-align: center !important;
+    align-items: center !important;
+}
