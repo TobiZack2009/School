@@ -29,7 +29,7 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('https://w3schools.com/w3images/parallax1.jpg');
+    background-image: url('assets/school.jpg');
     min-height: 100%;
 }
 
