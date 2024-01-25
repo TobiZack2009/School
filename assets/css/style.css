@@ -29,7 +29,7 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('assets/school.jpg');
+    background-image: url('./school.jpg');
     min-height: 100%;
 }
 
