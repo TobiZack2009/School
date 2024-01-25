@@ -35,13 +35,13 @@ html {
 
 /* Second image (GALLERY) */
 .bgimg-2 {
-    background-image: url("https://w3schools.com/w3images/parallax2.jpg");
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipNXyoAclQ2F8poo6Nmz1ZuCSFQ62-eDvcvH77uR=s680-w680-h510");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("https://w3schools.com/w3images/parallax3.jpg");
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipOTpw5-ARL1NOdB2Mad3l1hKJZzfiTLFPN84w31=s680-w680-h510");
     min-height: 400px;
 }
 
@@ -65,4 +65,8 @@ html {
 }
 a{
     text-decoration: none;
+}
+
+*{
+    scroll-behavior: smooth;
 }
