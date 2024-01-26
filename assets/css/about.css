@@ -1,5 +1,7 @@
 footer{
     background-color: black;
+    visibility: inherit;
+    display: block;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
