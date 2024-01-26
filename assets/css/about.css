@@ -1,3 +1,6 @@
+footer{
+    background-color: black;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
