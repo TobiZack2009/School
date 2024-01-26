@@ -74,7 +74,7 @@ html {
   }
   
   .longitude:after {
-    content: '>';
+    content: '→';
     position: absolute;
     opacity: 0;  
     top: 14px;
