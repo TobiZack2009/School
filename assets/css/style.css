@@ -74,7 +74,7 @@ html {
   }
   
   .longitude:after {
-    content: '→';
+    content: ' →';
     position: absolute;
     opacity: 0;  
     top: 14px;
@@ -86,7 +86,7 @@ html {
     padding-right: 24px;
     padding-left:8px;
     color: white;
-    background-color: rgb(255, 99, 71, 100%);
+    background-color: rgb(255, 99, 71, 100%) !important;
   }
   
   .longitude:hover:after {
