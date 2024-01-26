@@ -72,7 +72,9 @@ html {
     position: relative;
     transition: 0.5s;
   }
-  
+  .bx-tada{
+    font-family: Inter;
+  }
   .longitude:after {
       position: absolute;
       content: ' →';
