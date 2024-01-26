@@ -85,7 +85,7 @@ html {
   .longitude:hover{
     padding-right: 24px;
     padding-left:8px;
-    color: white;
+    color: white !important;
     background-color: rgb(255, 99, 71, 100%) !important;
   }
   
