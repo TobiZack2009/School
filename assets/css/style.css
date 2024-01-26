@@ -75,7 +75,7 @@ html {
   }
   
   .longitude:after {
-    content: '';
+    content: '<i class='bx bx-right-arrow-alt bx-tada' ></i>';
     position: absolute;
     opacity: 0;  
     top: 14px;
