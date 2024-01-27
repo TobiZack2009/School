@@ -26,3 +26,12 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+
+try{
+    AOS.init()
+}
+
+catch(err){
+    throw err;
+}
