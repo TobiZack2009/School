@@ -53,6 +53,8 @@ html {
 .w3-hover-opacity {
     cursor: pointer;
 }
+
+.timeline{
 .longitude {
     border-radius: 4px;
     background-color: rgb(255, 99, 71, 40%);
@@ -94,7 +96,7 @@ html {
   .longitude:hover:after {
     opacity: 1;
     right: 10px;
-  }
+  }}
 
 #swiper-quotes{
     border: none;
