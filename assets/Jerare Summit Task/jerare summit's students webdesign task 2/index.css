@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary: #B68D40;
+    --secondary: #D6AD60;
+    --black: #000000;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem grey;
+    color: black;
+    font-family: sans-serif;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active .pointer-hover {
+    background-color: #B68D40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.main {
+    width: 100%;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    box-shadow: grey;
+}
+
+.icon {
+    position: absolute;
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.menu {
+    position: absolute;
+    width: 600px;
+    float: right;
+    height: 70px;
+    margin-left: 600px;
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 22px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: var(--primary);
+    padding: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary);
+    padding: 5px;
+}
+
+.staff-ddmenu {
+    display: none;
+    top: 5.8%;
+    position: relative;
+}
+
+.staff-ddmenu ul {
+    position: absolute;
+}
+
+.menu ul li:hover .staff-ddmenu {
+    color: var(--primary);
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    margin-top: 17px;
+    margin-left: -30px;
+}
+
+.menu ul li:hover .staff-ddmenu ul {
+    display: block;
+    margin: 5px;
+}
+
+.menu ul li:hover .staff-ddmenu ul li {
+    width: 110px;
+    padding: 1px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0;
+}
+
+.info{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 200px;
+    text-align: center;
+    color: white;
+}
+
+.info span{
+    color: var(--primary);
+}
+
+.info button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info button:hover{
+    transform: scale(1.04);
+    background: var(--primary);
+}
+
+.image img {
+    margin-top: -50px;
+    width: 100%;
+    height: 720px;
+}
+
+.head h1 {
+    color: var(--secondary);
+    font-size: 50px;
+    margin-left: 35%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.mission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mission1 {
+    background: var(--primary);
+    padding: 20px;
+}
+
+.mission img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mission p span {
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.mission p {
+    font-size: 20px;
+    font-weight: 550;
+    justify-content: center;
+}
+
+.abt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-top: 20px;
+}
+
+.abt img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-left: 20px;
+}
+
+.abt p span {
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.abt p {
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: -300px;
+}
+
+/* services */
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+}
+
+.services .box-container .box img {
+    height: 5rem;
+    margin-bottom: .7rem;
+}
+
+.services .box-container .box h3 {
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.services .box-container .box h3 span {
+    font-size: 1.3rem;
+}
+
+/* end */
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skill2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skill3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 70px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skill4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 70px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background: floralwhite;
+}
+
+.skill img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.skill2 img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.skill3 img {
+    width: 80%;
+    height: 70%;
+}
+
+.skill4 img {
+    width: 100%;
+    height: 80%;
+}
+
+.skill1 {
+    background: var(--primary);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.skill4 .skill1 {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.skill1:hover {
+    transform: scale(1.04);
+}
+
+.skill5:hover {
+    transform: scale(1.04);
+}
+
+.skill h1 {
+    font-size: 20px;
+}
+
+.skill2 h1 {
+    font-size: 15px;
+}
+
+.skill p {
+    font-size: 15px;
+}
+
+.skill3 h1 {
+    font-size: 15px;
+}
+
+.skill3 p {
+    font-size: 15px;
+}
+
+.skill2 p {
+    font-size: 10px;
+}
+
+.skill button {
+    width: 50px;
+    height: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+/*contact*/
+.wrapper {
+    width: 1080px;
+    background: transparent;
+    border: 1px solid transparent;
+    backdrop-filter: blur(9px);
+    color: black;
+    border-radius: 2px;
+    padding: 30px 90px;
+    margin-top: 00px;
+}
+
+.wrapper h3 {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--black);
+    text-align: center;
+    margin-left: -200px;
+}
+
+.wrapper h1 span {
+    color: var(--primary);
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 00%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--black);
+    padding: 20px;
+    border-color: var(--black);
+}
+
+.input-box input::placeholder {
+    color: #000000;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper h1 span:hover {
+    color: black;
+}
+
+.wrapper h1:hover {
+    color: var(--primary);
+}
+
+.wrapper .input-box2 {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box2 input {
+    width: 100%;
+    height: 00%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 100px;
+    border-color: var(--black);
+    margin-bottom: 100px;
+}
+
+.input-box2 input::placeholder {
+    color: #000000;
+}
+
+.input-box2 i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn {
+    width: 45%;
+    height: 45px;
+    background: var(--secondary);
+    border-color: var(--white);
+    border: 0px solid;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 630px;
+    margin-top: 10px;
+    transition: transform 0.3s, color 0.3s,
+    ;
+}
+
+.wrapper .btn:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.wrapper .social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: .1px;
+    grid-row-gap: .1px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper .social img {
+    width: 50px;
+}
+
+/* footer */
+
+.footer {
+    background: var(--primary);
+    margin-top: 60px;
+    width: 1264px;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer .box-container .box h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 30%;
+    height: 2px;
+    background: white;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.footer .box-container .box h3:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    display: block;
+    color: white;
+    padding: 1rem 0;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i {
+    color: red;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--secondary);
+}
+
+
+/* end */
+

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.banner{
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(71, 61, 139, 0.836);
+    position: fixed;
+
+}
+
+.navbar{
+    width: 85%;
+    padding: 10px 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    color: darkcyan;
+    margin-top: 0;
+    position: fixed;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin-top: 0.5px;
+    align-items: top;
+    margin-bottom: 50px;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom:-0px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.sec1{
+    background-color: darkblue;
+}
+.c2{
+    padding-bottom: 500;
+}
+
+
+
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10;
+    z-index: -1;
+    margin-bottom: 55px;
+
+    
+    
+}
+.overlay{
+    position: absolute;
+    margin-top: 55;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    z-index: -1;
+    background: rgba(0, 0, 255, 0.185);
+}
+.navbar a:active{
+    color: var(--main-colour);
+
+}
+
+.aboutus{
+    background-color: gray;
+    margin-top: 200px;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+.img{
+    margin-top: 20px;
+    width: 100px;
+    
+}
+
+.text{
+    width: 600px;
+    font-size: 14px;
+    text-align: right;
+
+}
+.all{
+    width: 100px;
+}
+
+.aboutus2{
+    background-color:gray;
+    margin-top: 0px;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2{
+    margin-top: 20px;
+    width: 80px;
+    
+}
+
+.text2{
+    width: 500px;
+    font-size: 14px;
+    text-align: right;
+
+}
+.all2{
+    width: 100px;
+}
+
+.contactus{
+background: url('./love.png') ;
+margin-top: 0px;
+height: 505px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.row1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+    padding: 50px;
+}
+p{
+    color: white;
+}
+
+.lal{
+    text-align: center;
+    font-size: 42px;
+}
